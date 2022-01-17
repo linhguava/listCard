@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
-import { Button } from "@material-ui/core";
+import { Button, Link } from "@material-ui/core";
 
 const useStyle = makeStyles((theme) => ({
   test: {
@@ -55,9 +55,11 @@ export default function Test() {
         Start Want to track your progress? Sign up for SMS alerts to keep you up
         to date on your Reward status and Deal credits.
       </Typography>
-      <Button className={classes.button} color="primary" variant="contained">
-        Get a Quick Start
-      </Button>
+      <Link href="/card" underline="none">
+        <Button className={classes.button} color="primary" variant="contained">
+          Get a Quick Start
+        </Button>
+      </Link>
     </div>
   );
 }
