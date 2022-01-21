@@ -3,23 +3,24 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
 
 import Header from "../component/Header";
-import Test from "../component/Test";
+import Intro from "../component/Intro";
 
 const useStyles = makeStyles((theme) => ({
-  // app: {
-  //   width: "80%",
-  //   display: "block",
-  //   margin: "auto",
-  // },
+  homeContent: {
+    width: "80%",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
+  },
 }));
 
 export default function HomeContent() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.homeContent}>
+    <div className={classes.homeContent}>
       <Header />
-      <Test />
-    </Container>
+      <Intro />
+    </div>
   );
 }
