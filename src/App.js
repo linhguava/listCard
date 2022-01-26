@@ -5,13 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeContent from "./page/HomeContent";
 import CardContent from "./page/CardContent";
 
-const useStyles = makeStyles((theme) => ({
-  // app: {
-  //   width: "80%",
-  //   display: "block",
-  //   margin: "auto",
-  // },
-}));
+const useStyles = makeStyles((theme) => ({}));
 
 function App() {
   const classes = useStyles();

@@ -8,6 +8,7 @@ import Intro from "../component/Intro";
 const useStyles = makeStyles((theme) => ({
   homeContent: {
     width: "80%",
+    margin: "auto",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
     },

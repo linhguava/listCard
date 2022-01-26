@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import ListCard from "../component/ListCard";
 
 const useStyles = makeStyles((theme) => ({
-  homeContent: {
+  listCard: {
     height: "100vh",
     display: "flex",
     flexDirection: "column",
@@ -18,7 +18,7 @@ export default function HomeContent() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.homeContent}>
+    <Container className={classes.listCard}>
       <ListCard />
     </Container>
   );
